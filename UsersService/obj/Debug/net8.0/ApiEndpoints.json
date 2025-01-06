@@ -1,0 +1,202 @@
+[
+  {
+    "ContainingType": "UsersService.Controllers.CartController",
+    "Method": "AddProductToCart",
+    "RelativePath": "api/Cart",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cartDTO",
+        "Type": "UsersService.DTO.CartDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersService.Controllers.CartController",
+    "Method": "DeleteCartFromId",
+    "RelativePath": "api/Cart/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersService.Controllers.CartController",
+    "Method": "DeleteAllProductFromCart",
+    "RelativePath": "api/Cart/DeleteAllProductFromCart",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailRequest",
+        "Type": "UsersService.DTO.emailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersService.Controllers.CartController",
+    "Method": "GetAllCarts",
+    "RelativePath": "api/Cart/getCartFromUserEmail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailRequest",
+        "Type": "UsersService.DTO.emailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersService.Controllers.CartController",
+    "Method": "GetCartSummary",
+    "RelativePath": "api/Cart/GetCartSummary",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailRequest",
+        "Type": "UsersService.DTO.emailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersService.Controllers.CartController",
+    "Method": "getShoppingList",
+    "RelativePath": "api/Cart/getShoppingList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailRequest",
+        "Type": "UsersService.DTO.emailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersService.Controllers.CartController",
+    "Method": "GetTotalPrice",
+    "RelativePath": "api/Cart/GetTotalPrice",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailRequest",
+        "Type": "UsersService.DTO.emailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersService.Controllers.managerController",
+    "Method": "LoginTest",
+    "RelativePath": "api/manager/LoginTest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "UsersService.DTO.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersService.Controllers.PaymentRestController",
+    "Method": "GetShoppingListCount",
+    "RelativePath": "api/PaymentRest/GetShoppingListCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersService.Controllers.PaymentRestController",
+    "Method": "GetUserPaymentData",
+    "RelativePath": "api/PaymentRest/GetUserPaymentData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersService.Controllers.UserDataController",
+    "Method": "createUserData",
+    "RelativePath": "api/UserData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newData",
+        "Type": "UsersService.Models.UserData",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersService.Controllers.UserDataController",
+    "Method": "GetAllUserData",
+    "RelativePath": "api/UserData/GetAllUserData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersService.Controllers.UserDataController",
+    "Method": "GetTotalFollowers",
+    "RelativePath": "api/UserData/GetTotalFollowers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersService.Controllers.UserDataController",
+    "Method": "LoginTest",
+    "RelativePath": "api/UserData/LoginTest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "UsersService.DTO.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
