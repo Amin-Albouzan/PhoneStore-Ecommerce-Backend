@@ -32,6 +32,11 @@ namespace UsersService.Models
     
         [Required]
         public int User_ID { get; set; }
-       
+
+
+
+
+        
+
     }
 }

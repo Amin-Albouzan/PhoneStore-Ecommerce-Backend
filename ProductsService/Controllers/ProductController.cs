@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ProductsService.DTO;
 using ProductsService.Models;
 using ProductsService.Repositories;
 
@@ -84,9 +85,9 @@ namespace ProductsService.Controllers
 
 
         [HttpPost]
-        public ActionResult CreateNewProduct(Product product)
+        public ActionResult CreateNewProduct(ProductDTO productDTO)
         {
-            Product data = context.ProductData.FirstOrDefault(e => e.Product_Name == product.Product_Name);
+            Product data = context.ProductData.FirstOrDefault(e => e.Product_Name == productDTO.Product_Name);
 
             if(data != null)
             {
@@ -96,7 +97,15 @@ namespace ProductsService.Controllers
 
             else
             {
-  context.ProductData.Add(product);
+                var product = new Product
+                {
+                    Product_Name = productDTO.Product_Name,
+                    Product_Price = productDTO.Product_Price,
+                    Product_Discription = productDTO.Product_Discription,
+                    Product_ImageUrl = productDTO.Product_ImageUrl,
+                    Category_Id = productDTO.Category_Id
+                };
+                context.ProductData.Add(product);
             context.SaveChanges();
                 return StatusCode(StatusCodes.Status204NoContent);
 
@@ -134,7 +143,7 @@ namespace ProductsService.Controllers
 
 
         [HttpPut("{id:int}")]
-        public IActionResult PutProduct(int id,Product product)
+        public IActionResult PutProduct(int id,ProductDTO product)
         {
             Product Oldproduct = context.ProductData.FirstOrDefault(p => p.Product_ID == id);
             Oldproduct.Product_Name= product.Product_Name;

@@ -10,5 +10,7 @@ namespace ProductsService.Models
         [Required]
         public String Category_Name { get; set; }
 
+
+        public List<Product> Product { get; set; }
     }
 }

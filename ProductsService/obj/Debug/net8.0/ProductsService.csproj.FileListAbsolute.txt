@@ -112,3 +112,4 @@ C:\Users\acer\Desktop\soa\ProductsService\obj\Debug\net8.0\refint\ProductsServic
 C:\Users\acer\Desktop\soa\ProductsService\obj\Debug\net8.0\ProductsService.pdb
 C:\Users\acer\Desktop\soa\ProductsService\obj\Debug\net8.0\ProductsService.genruntimeconfig.cache
 C:\Users\acer\Desktop\soa\ProductsService\obj\Debug\net8.0\ref\ProductsService.dll
+C:\Users\acer\Desktop\soa\ProductsService\obj\Debug\net8.0\ProductsService.sourcelink.json

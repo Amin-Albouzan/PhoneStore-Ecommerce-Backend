@@ -8,7 +8,7 @@ namespace ProductsService.Models
         [Key]
         public int Product_ID { get; set; }
 
-       
+
         [Required]
         public String Product_Name { get; set; }
 
@@ -23,10 +23,15 @@ namespace ProductsService.Models
         public String Product_ImageUrl { get; set; }
 
 
-        //[ForeignKey("Category")]
-        [Required]
+
+        [Required,ForeignKey("Category")]
         public int Category_Id { get; set; }
-        //public virtual Category Category { get; set; }
+
+
+
+        public Category Category { get; set; }
+
+
 
     }
 }

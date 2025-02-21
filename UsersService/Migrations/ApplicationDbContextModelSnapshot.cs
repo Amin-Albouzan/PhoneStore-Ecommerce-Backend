@@ -98,7 +98,7 @@ namespace UsersService.Migrations
                     b.HasIndex("User_ID")
                         .HasDatabaseName("IDX_CartData_UserID_Search");
 
-                    b.ToTable("CartData");
+                    b.ToTable("CartData", (string)null);
                 });
 
             modelBuilder.Entity("UsersService.Models.PaymentData", b =>
@@ -141,7 +141,7 @@ namespace UsersService.Migrations
 
                     b.HasKey("Payment_ID");
 
-                    b.ToTable("PaymentData");
+                    b.ToTable("PaymentData", (string)null);
                 });
 
             modelBuilder.Entity("UsersService.Models.ShoppingListSP", b =>
@@ -187,7 +187,7 @@ namespace UsersService.Migrations
                     b.Property<double>("total_price")
                         .HasColumnType("double");
 
-                    b.ToTable("totalPrice");
+                    b.ToTable("totalPrice", (string)null);
                 });
 
             modelBuilder.Entity("UsersService.Models.UserData", b =>
@@ -227,7 +227,7 @@ namespace UsersService.Migrations
                     b.HasIndex("User_Email")
                         .IsUnique();
 
-                    b.ToTable("UserData", t =>
+                    b.ToTable("UserData", null, t =>
                         {
                             t.HasCheckConstraint("CK_UserData_User_PhoneNumber", "User_PhoneNumber REGEXP '^[0-9]{11}$'");
                         });
@@ -272,7 +272,7 @@ namespace UsersService.Migrations
                     b.Property<int>("product_count")
                         .HasColumnType("int");
 
-                    b.ToTable("cartSummary");
+                    b.ToTable("cartSummary", (string)null);
                 });
 
             modelBuilder.Entity("UsersService.Models.manager", b =>
@@ -312,7 +312,7 @@ namespace UsersService.Migrations
                     b.HasIndex("manager_Email")
                         .IsUnique();
 
-                    b.ToTable("managerData");
+                    b.ToTable("managerData", (string)null);
                 });
 #pragma warning restore 612, 618
         }

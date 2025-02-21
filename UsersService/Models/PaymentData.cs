@@ -9,10 +9,10 @@ namespace UsersService.Models
         [Required]
         public int Payment_ID { get; set; }
 
-        [ForeignKey("CartData")]
-        public int Cart_ID { get; set; }
+        //[ForeignKey("CartData")]
+        public int? Cart_ID { get; set; }
 
-        [ForeignKey("productdata")]
+        
         [Required]
         public int Product_ID { get; set; }
 
@@ -31,7 +31,7 @@ namespace UsersService.Models
 
         public int Quantity { get; set; }
 
-        [ForeignKey("UserData")]
+        //[ForeignKey("UserData")]
         [Required]
         public int User_ID { get; set; }
 
@@ -39,7 +39,7 @@ namespace UsersService.Models
         public DateTime payment_Date { get; set; }
 
 
-
+        
 
     }
 }

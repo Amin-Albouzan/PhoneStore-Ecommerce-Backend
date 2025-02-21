@@ -60,17 +60,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Product"
+                "$ref": "#/components/schemas/ProductDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Product"
+                "$ref": "#/components/schemas/ProductDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Product"
+                "$ref": "#/components/schemas/ProductDTO"
               }
             }
           }
@@ -167,17 +167,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Product"
+                "$ref": "#/components/schemas/ProductDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Product"
+                "$ref": "#/components/schemas/ProductDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Product"
+                "$ref": "#/components/schemas/ProductDTO"
               }
             }
           }
@@ -192,14 +192,7 @@
   },
   "components": {
     "schemas": {
-      "Product": {
-        "required": [
-          "category_Id",
-          "product_Discription",
-          "product_ImageUrl",
-          "product_Name",
-          "product_Price"
-        ],
+      "ProductDTO": {
         "type": "object",
         "properties": {
           "product_ID": {
@@ -207,20 +200,20 @@
             "format": "int32"
           },
           "product_Name": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "product_Price": {
             "type": "number",
             "format": "double"
           },
           "product_Discription": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "product_ImageUrl": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "category_Id": {
             "type": "integer",

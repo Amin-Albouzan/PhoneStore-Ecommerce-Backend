@@ -48,8 +48,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "product",
-        "Type": "ProductsService.Models.Product",
+        "Name": "productDTO",
+        "Type": "ProductsService.DTO.ProductDTO",
         "IsRequired": true
       }
     ],
@@ -102,7 +102,7 @@
       },
       {
         "Name": "product",
-        "Type": "ProductsService.Models.Product",
+        "Type": "ProductsService.DTO.ProductDTO",
         "IsRequired": true
       }
     ],
